@@ -24,6 +24,7 @@ class _WeatherPageState extends State<WeatherPage>
 
   @override
   void initState() {
+    super.initState();
     _animation = Tween(begin: 1.0, end: 3.0)
         .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut))
       ..addListener(() {
